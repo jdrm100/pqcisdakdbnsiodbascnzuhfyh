@@ -47,8 +47,6 @@
                 End If
 
 
-
-
             Catch ex As Exception
                 MessageBox.Show("Error al  llamar el Procedimiento,No se puede ingresar LETRAS", "Llamar los Metodos y Validar campos", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
@@ -83,31 +81,44 @@
 
     End Sub
 
-    Public Sub mostrar()
+    'Public Sub mostrar()
 
 
-        Try
-            Dim _Buscar As New CCCRecargaTransCombo
-            _Dt = _Buscar.mostrar
-            cbo_operadora.DataSource = _Dt
-            cbo_operadora.DisplayMember = "PROVEEDOR"
+    '    Try
+    '        Dim _Buscar As New CCCRecargaTransCombo
+    '        _Dt = _Buscar.mostrar
+    '        cbo_operadora.DataSource = _Dt
+    '        cbo_operadora.DisplayMember = "PROVEEDOR"
 
-        Catch ex As Exception
-            MessageBox.Show("Error al llamar al Metodo", "Error al Cargar ComboBox", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-        
+    '    Catch ex As Exception
+    '        MessageBox.Show("Error al llamar al Metodo", "Error al Cargar ComboBox", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    '    End Try
 
+
+    'End Sub
+
+
+    '    Private Sub Reporte_Recarga_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '        'mostrar()
+    '        txt_agente.Select()
+    '        cargarCmbRecarga()
+    '    End Sub
+
+ 
+
+
+
+
+
+    Private Sub cargarCmbRecarga()
+        Dim _Buscar As New CCCRecargaDetallado
+        Dim lista As DataTable = _Buscar.CargarProveedor()
+        cbo_operadora.DataSource = lista
+        cbo_operadora.DisplayMember = "d"
+        cbo_operadora.ValueMember = "codigojuego"
     End Sub
 
-    
-    Private Sub Reporte_Recarga_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        mostrar()
-        txt_agente.Select()
 
-    End Sub
-
-   
-  
 
     Private Sub txt_agente_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles txt_agente.Validating
         Try

@@ -56,7 +56,7 @@ Partial Class frmReporte_Loteria
         Me.GroupBox1.ForeColor = System.Drawing.Color.Navy
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(528, 174)
+        Me.GroupBox1.Size = New System.Drawing.Size(528, 182)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Parámetro"
@@ -64,6 +64,8 @@ Partial Class frmReporte_Loteria
         'chk_todos
         '
         Me.chk_todos.AutoSize = True
+        Me.chk_todos.Checked = True
+        Me.chk_todos.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chk_todos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chk_todos.ForeColor = System.Drawing.Color.Black
         Me.chk_todos.Location = New System.Drawing.Point(304, 118)
@@ -154,7 +156,7 @@ Partial Class frmReporte_Loteria
         Me.btn_salir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_salir.Image = Global.My.Resources.Resources.Cancel_Red_Button
         Me.btn_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_salir.Location = New System.Drawing.Point(138, 192)
+        Me.btn_salir.Location = New System.Drawing.Point(138, 200)
         Me.btn_salir.Name = "btn_salir"
         Me.btn_salir.Size = New System.Drawing.Size(120, 42)
         Me.btn_salir.TabIndex = 10
@@ -168,7 +170,7 @@ Partial Class frmReporte_Loteria
         Me.btn_imprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_imprimir.Image = Global.My.Resources.Resources.if_Printer_71593
         Me.btn_imprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_imprimir.Location = New System.Drawing.Point(12, 192)
+        Me.btn_imprimir.Location = New System.Drawing.Point(12, 200)
         Me.btn_imprimir.Name = "btn_imprimir"
         Me.btn_imprimir.Size = New System.Drawing.Size(120, 42)
         Me.btn_imprimir.TabIndex = 9
@@ -185,7 +187,7 @@ Partial Class frmReporte_Loteria
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(552, 245)
+        Me.ClientSize = New System.Drawing.Size(552, 254)
         Me.Controls.Add(Me.btn_salir)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_imprimir)

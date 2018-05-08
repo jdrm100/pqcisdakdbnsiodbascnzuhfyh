@@ -59,7 +59,7 @@ Partial Class FRMReporte_Recarga
         Me.GroupBox1.ForeColor = System.Drawing.Color.Navy
         Me.GroupBox1.Location = New System.Drawing.Point(14, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(425, 174)
+        Me.GroupBox1.Size = New System.Drawing.Size(425, 201)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Parametro Generales"
@@ -198,7 +198,7 @@ Partial Class FRMReporte_Recarga
         Me.btn_imprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_imprimir.Image = Global.My.Resources.Resources.if_Printer_71593
         Me.btn_imprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_imprimir.Location = New System.Drawing.Point(12, 192)
+        Me.btn_imprimir.Location = New System.Drawing.Point(14, 219)
         Me.btn_imprimir.Name = "btn_imprimir"
         Me.btn_imprimir.Size = New System.Drawing.Size(120, 42)
         Me.btn_imprimir.TabIndex = 2
@@ -212,7 +212,7 @@ Partial Class FRMReporte_Recarga
         Me.btn_salir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_salir.Image = Global.My.Resources.Resources.Cancel_Red_Button
         Me.btn_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_salir.Location = New System.Drawing.Point(138, 192)
+        Me.btn_salir.Location = New System.Drawing.Point(136, 219)
         Me.btn_salir.Name = "btn_salir"
         Me.btn_salir.Size = New System.Drawing.Size(120, 42)
         Me.btn_salir.TabIndex = 3
@@ -229,7 +229,7 @@ Partial Class FRMReporte_Recarga
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(716, 239)
+        Me.ClientSize = New System.Drawing.Size(716, 260)
         Me.Controls.Add(Me.btn_salir)
         Me.Controls.Add(Me.btn_imprimir)
         Me.Controls.Add(Me.GroupBox2)

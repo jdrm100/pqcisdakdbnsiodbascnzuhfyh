@@ -478,12 +478,6 @@
     <Compile Include="Presentacion\Reporte de Antiguedad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Reporte Loteria.Designer.vb">
-      <DependentUpon>Reporte Loteria.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reporte Loteria.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\Reporte Recarga.Designer.vb">
       <DependentUpon>Reporte Recarga.vb</DependentUpon>
     </Compile>
@@ -500,6 +494,12 @@
       <DependentUpon>ReporteAntiguedadResumido.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\ReporteAntiguedadResumido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ReporteLoteria.Designer.vb">
+      <DependentUpon>ReporteLoteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ReporteLoteria.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\ReproteComisionesForm.Designer.vb">
@@ -829,9 +829,6 @@
     <EmbeddedResource Include="Presentacion\Reporte de Antiguedad.resx">
       <DependentUpon>Reporte de Antiguedad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reporte Loteria.resx">
-      <DependentUpon>Reporte Loteria.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reporte Recarga.resx">
       <DependentUpon>Reporte Recarga.vb</DependentUpon>
     </EmbeddedResource>
@@ -840,6 +837,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\ReporteAntiguedadResumido.resx">
       <DependentUpon>ReporteAntiguedadResumido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ReporteLoteria.resx">
+      <DependentUpon>ReporteLoteria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\ReproteComisionesForm.resx">
       <DependentUpon>ReproteComisionesForm.vb</DependentUpon>

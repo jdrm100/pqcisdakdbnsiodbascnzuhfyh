@@ -270,21 +270,78 @@ Public Class Ccc_AntiguedadGestor
         Dim _Leer As SqlDataReader = _Cmd.ExecuteReader
         While _Leer.Read
             Dim _Registro As New Eantiguedadsaldogestor
-            _Registro._Agente = _Leer("RETAILER").ToString
+            If _Leer("RETAILER") IsNot DBNull.Value Then
+                _Registro._Agente = ""
+            Else
+                _Registro._Agente = _Leer("RETAILER").ToString
+            End If
+
             If vcurso = True Then
-                _Registro._SemanaCurso = _Leer("VENTA_EN_CURSO")
+                If _Leer("VENTA_EN_CURSO") IsNot DBNull.Value Then
+                    _Registro._SemanaCurso = 0
+                Else
+                    _Registro._SemanaCurso = _Leer("VENTA_EN_CURSO").ToString
+                End If
+
             Else
                 _Registro._SemanaCurso = 0
             End If
 
-            _Registro._telefono1 = _Leer("TELEFONO")
-            _Registro._cxc = _Leer("ANTIGUEDAD")
-            _Registro._nombre = _Leer("NOMBRE")
-            _Registro._Balance = _Leer("BALANCE")
-            _Registro._gestor = _Leer("GESTOR")
-            _Registro._estdata = _Leer("ESTADO")
-            _Registro.OTROS_BANCOS = _Leer("otros_bancos")
-            _Registro.AJUSTES = _Leer("ajustes")
+            If _Leer("TELEFONO") IsNot DBNull.Value Then
+                _Registro._telefono1 = ""
+            Else
+                _Registro._telefono1 = _Leer("TELEFONO").ToString
+            End If
+            '_Registro._telefono1 = _Leer("TELEFONO")
+
+            If _Leer("ANTIGUEDAD") IsNot DBNull.Value Then
+                _Registro._cxc = 0
+            Else
+                _Registro._cxc = _Leer("ANTIGUEDAD").ToString
+            End If
+            '_Registro._cxc = _Leer("ANTIGUEDAD")
+
+            If _Leer("NOMBRE") IsNot DBNull.Value Then
+                _Registro._nombre = ""
+            Else
+                _Registro._nombre = _Leer("NOMBRE").ToString
+            End If
+            '_Registro._nombre = _Leer("NOMBRE")
+
+            If _Leer("BALANCE") IsNot DBNull.Value Then
+                _Registro._Balance = 0
+            Else
+                _Registro._Balance = _Leer("BALANCE").ToString
+            End If
+            '_Registro._Balance = _Leer("BALANCE")
+
+            If _Leer("GESTOR") IsNot DBNull.Value Then
+                _Registro._gestor = ""
+            Else
+                _Registro._gestor = _Leer("GESTOR").ToString
+            End If
+            '_Registro._gestor = _Leer("GESTOR")
+
+            If _Leer("ESTADO") IsNot DBNull.Value Then
+                _Registro._estdata = ""
+            Else
+                _Registro._estdata = _Leer("ESTADO").ToString
+            End If
+            '_Registro._estdata = _Leer("ESTADO")
+
+            If _Leer("otros_bancos") IsNot DBNull.Value Then
+                _Registro.OTROS_BANCOS = 0
+            Else
+                _Registro.OTROS_BANCOS = _Leer("otros_bancos").ToString
+            End If
+            '_Registro.OTROS_BANCOS = _Leer("otros_bancos") 
+
+            If _Leer("ajustes") IsNot DBNull.Value Then
+                _Registro.AJUSTES = 0
+            Else
+                _Registro.AJUSTES = _Leer("ajustes").ToString
+            End If
+            '_Registro.AJUSTES = _Leer("ajustes")
 
             _Registro._FI = Fi
             _Registro._FF = Ff
@@ -305,9 +362,9 @@ Public Class Ccc_AntiguedadGestor
         _Cmd.CommandType = CommandType.StoredProcedure
         _Cmd.CommandTimeout = 1000000
         _Cmd.Connection = _cnn
-
-        _Cmd.Parameters.Add("@fecha_fin", SqlDbType.VarChar, 15).Value = Ff
         _Cmd.Parameters.Add("@fecha_ini", SqlDbType.VarChar, 15).Value = Fi
+        _Cmd.Parameters.Add("@fecha_fin", SqlDbType.VarChar, 15).Value = Ff
+
         Dim T_VC_ACTIVA As Decimal = 0
         Dim T_VC_BLOQUEADA As Decimal = 0
         Dim T_VC_RETIRADA As Decimal = 0
