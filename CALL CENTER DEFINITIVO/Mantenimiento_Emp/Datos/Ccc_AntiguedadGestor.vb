@@ -271,16 +271,17 @@ Public Class Ccc_AntiguedadGestor
         While _Leer.Read
             Dim _Registro As New Eantiguedadsaldogestor
             If _Leer("RETAILER") IsNot DBNull.Value Then
-                _Registro._Agente = ""
-            Else
                 _Registro._Agente = _Leer("RETAILER").ToString
+            Else
+                _Registro._Agente = ""
             End If
 
             If vcurso = True Then
                 If _Leer("VENTA_EN_CURSO") IsNot DBNull.Value Then
-                    _Registro._SemanaCurso = 0
-                Else
                     _Registro._SemanaCurso = _Leer("VENTA_EN_CURSO").ToString
+                Else
+                    _Registro._SemanaCurso = 0
+
                 End If
 
             Else
@@ -288,58 +289,58 @@ Public Class Ccc_AntiguedadGestor
             End If
 
             If _Leer("TELEFONO") IsNot DBNull.Value Then
-                _Registro._telefono1 = ""
-            Else
                 _Registro._telefono1 = _Leer("TELEFONO").ToString
+            Else
+                _Registro._telefono1 = ""
             End If
             '_Registro._telefono1 = _Leer("TELEFONO")
 
             If _Leer("ANTIGUEDAD") IsNot DBNull.Value Then
-                _Registro._cxc = 0
-            Else
                 _Registro._cxc = _Leer("ANTIGUEDAD").ToString
+            Else
+                _Registro._cxc = 0
             End If
             '_Registro._cxc = _Leer("ANTIGUEDAD")
 
             If _Leer("NOMBRE") IsNot DBNull.Value Then
-                _Registro._nombre = ""
-            Else
                 _Registro._nombre = _Leer("NOMBRE").ToString
+            Else
+                _Registro._nombre = ""
             End If
             '_Registro._nombre = _Leer("NOMBRE")
 
             If _Leer("BALANCE") IsNot DBNull.Value Then
-                _Registro._Balance = 0
-            Else
                 _Registro._Balance = _Leer("BALANCE").ToString
+            Else
+                _Registro._Balance = 0
             End If
             '_Registro._Balance = _Leer("BALANCE")
 
             If _Leer("GESTOR") IsNot DBNull.Value Then
-                _Registro._gestor = ""
-            Else
                 _Registro._gestor = _Leer("GESTOR").ToString
+            Else
+                _Registro._gestor = ""
             End If
             '_Registro._gestor = _Leer("GESTOR")
 
             If _Leer("ESTADO") IsNot DBNull.Value Then
-                _Registro._estdata = ""
-            Else
                 _Registro._estdata = _Leer("ESTADO").ToString
+            Else
+                _Registro._estdata = ""
             End If
             '_Registro._estdata = _Leer("ESTADO")
 
             If _Leer("otros_bancos") IsNot DBNull.Value Then
-                _Registro.OTROS_BANCOS = 0
-            Else
                 _Registro.OTROS_BANCOS = _Leer("otros_bancos").ToString
+            Else
+                _Registro.OTROS_BANCOS = 0
             End If
             '_Registro.OTROS_BANCOS = _Leer("otros_bancos") 
 
             If _Leer("ajustes") IsNot DBNull.Value Then
-                _Registro.AJUSTES = 0
-            Else
                 _Registro.AJUSTES = _Leer("ajustes").ToString
+            Else
+                _Registro.AJUSTES = 0
             End If
             '_Registro.AJUSTES = _Leer("ajustes")
 

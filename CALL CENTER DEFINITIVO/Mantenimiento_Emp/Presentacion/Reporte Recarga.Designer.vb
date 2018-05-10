@@ -75,7 +75,7 @@ Partial Class FRMReporte_Recarga
         Me.chktodos.ForeColor = System.Drawing.Color.Black
         Me.chktodos.Location = New System.Drawing.Point(309, 134)
         Me.chktodos.Name = "chktodos"
-        Me.chktodos.Size = New System.Drawing.Size(72, 20)
+        Me.chktodos.Size = New System.Drawing.Size(82, 24)
         Me.chktodos.TabIndex = 8
         Me.chktodos.Text = "Todos"
         Me.chktodos.UseVisualStyleBackColor = True
@@ -85,7 +85,7 @@ Partial Class FRMReporte_Recarga
         Me.dtp_fechafinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtp_fechafinal.Location = New System.Drawing.Point(122, 99)
         Me.dtp_fechafinal.Name = "dtp_fechafinal"
-        Me.dtp_fechafinal.Size = New System.Drawing.Size(125, 22)
+        Me.dtp_fechafinal.Size = New System.Drawing.Size(125, 26)
         Me.dtp_fechafinal.TabIndex = 7
         '
         'Dtp_fechainicial
@@ -93,14 +93,14 @@ Partial Class FRMReporte_Recarga
         Me.Dtp_fechainicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.Dtp_fechainicial.Location = New System.Drawing.Point(122, 66)
         Me.Dtp_fechainicial.Name = "Dtp_fechainicial"
-        Me.Dtp_fechainicial.Size = New System.Drawing.Size(125, 22)
+        Me.Dtp_fechainicial.Size = New System.Drawing.Size(125, 26)
         Me.Dtp_fechainicial.TabIndex = 6
         '
         'txt_agente
         '
         Me.txt_agente.Location = New System.Drawing.Point(122, 33)
         Me.txt_agente.Name = "txt_agente"
-        Me.txt_agente.Size = New System.Drawing.Size(125, 22)
+        Me.txt_agente.Size = New System.Drawing.Size(125, 26)
         Me.txt_agente.TabIndex = 5
         Me.tt_mensaje.SetToolTip(Me.txt_agente, "Introdusca el numero Agente.Este campo es Oblicatorio")
         '
@@ -109,7 +109,7 @@ Partial Class FRMReporte_Recarga
         Me.cbo_operadora.FormattingEnabled = True
         Me.cbo_operadora.Location = New System.Drawing.Point(122, 132)
         Me.cbo_operadora.Name = "cbo_operadora"
-        Me.cbo_operadora.Size = New System.Drawing.Size(181, 24)
+        Me.cbo_operadora.Size = New System.Drawing.Size(181, 28)
         Me.cbo_operadora.TabIndex = 4
         '
         'lbloperadora
@@ -119,7 +119,7 @@ Partial Class FRMReporte_Recarga
         Me.lbloperadora.ForeColor = System.Drawing.Color.Black
         Me.lbloperadora.Location = New System.Drawing.Point(12, 135)
         Me.lbloperadora.Name = "lbloperadora"
-        Me.lbloperadora.Size = New System.Drawing.Size(70, 13)
+        Me.lbloperadora.Size = New System.Drawing.Size(91, 17)
         Me.lbloperadora.TabIndex = 3
         Me.lbloperadora.Text = "Operadora:"
         '
@@ -130,7 +130,7 @@ Partial Class FRMReporte_Recarga
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(7, 69)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 13)
+        Me.Label3.Size = New System.Drawing.Size(104, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Fecha Inicial:"
         '
@@ -141,7 +141,7 @@ Partial Class FRMReporte_Recarga
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(7, 101)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 13)
+        Me.Label2.Size = New System.Drawing.Size(97, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Fecha Final:"
         '
@@ -152,7 +152,7 @@ Partial Class FRMReporte_Recarga
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(7, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 13)
+        Me.Label1.Size = New System.Drawing.Size(64, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Agente:"
         '
@@ -177,7 +177,7 @@ Partial Class FRMReporte_Recarga
         Me.rd_detalla.ForeColor = System.Drawing.Color.Black
         Me.rd_detalla.Location = New System.Drawing.Point(6, 57)
         Me.rd_detalla.Name = "rd_detalla"
-        Me.rd_detalla.Size = New System.Drawing.Size(79, 17)
+        Me.rd_detalla.Size = New System.Drawing.Size(98, 21)
         Me.rd_detalla.TabIndex = 2
         Me.rd_detalla.Text = "Detallada"
         Me.rd_detalla.UseVisualStyleBackColor = True
@@ -189,7 +189,7 @@ Partial Class FRMReporte_Recarga
         Me.rd_transacciones.ForeColor = System.Drawing.Color.Black
         Me.rd_transacciones.Location = New System.Drawing.Point(6, 83)
         Me.rd_transacciones.Name = "rd_transacciones"
-        Me.rd_transacciones.Size = New System.Drawing.Size(138, 17)
+        Me.rd_transacciones.Size = New System.Drawing.Size(174, 21)
         Me.rd_transacciones.TabIndex = 1
         Me.rd_transacciones.Text = "Por Transancciones"
         Me.rd_transacciones.UseVisualStyleBackColor = True
@@ -202,7 +202,7 @@ Partial Class FRMReporte_Recarga
         Me.rd_resumida.ForeColor = System.Drawing.Color.Black
         Me.rd_resumida.Location = New System.Drawing.Point(6, 31)
         Me.rd_resumida.Name = "rd_resumida"
-        Me.rd_resumida.Size = New System.Drawing.Size(80, 17)
+        Me.rd_resumida.Size = New System.Drawing.Size(100, 21)
         Me.rd_resumida.TabIndex = 0
         Me.rd_resumida.TabStop = True
         Me.rd_resumida.Text = "Resumida"
@@ -242,7 +242,7 @@ Partial Class FRMReporte_Recarga
         '
         'FRMReporte_Recarga
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(716, 278)

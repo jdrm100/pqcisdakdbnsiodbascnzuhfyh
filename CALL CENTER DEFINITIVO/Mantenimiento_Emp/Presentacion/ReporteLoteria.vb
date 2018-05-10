@@ -71,23 +71,24 @@
     End Sub
 
     Private Sub btn_salir_Click(sender As Object, e As EventArgs) Handles btn_salir.Click
-        End
-    End Sub
-
-    Private Sub cbo_juegos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbo_juegos.SelectedIndexChanged
+        Me.Dispose()
 
     End Sub
 
-    Private Sub chk_todos_CheckedChanged(sender As Object, e As EventArgs) Handles chk_todos.CheckedChanged
-        If chk_todos.Checked = True Then
-            cbo_juegos.Enabled = False
-        Else
-            cbo_juegos.Enabled = True
-        End If
+        Private Sub cbo_juegos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbo_juegos.SelectedIndexChanged
 
-    End Sub
+        End Sub
+
+        Private Sub chk_todos_CheckedChanged(sender As Object, e As EventArgs) Handles chk_todos.CheckedChanged
+            If chk_todos.Checked = True Then
+                cbo_juegos.Enabled = False
+            Else
+                cbo_juegos.Enabled = True
+            End If
+
+        End Sub
 
 
 
 
-End Class
+    End Class
