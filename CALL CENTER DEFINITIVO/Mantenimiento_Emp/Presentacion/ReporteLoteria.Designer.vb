@@ -187,7 +187,7 @@ Partial Class frmReporte_Loteria
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(552, 254)
+        Me.ClientSize = New System.Drawing.Size(552, 259)
         Me.Controls.Add(Me.btn_salir)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_imprimir)

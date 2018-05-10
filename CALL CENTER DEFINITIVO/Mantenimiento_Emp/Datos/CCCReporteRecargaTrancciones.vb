@@ -10,11 +10,11 @@ Public Class CCCReporteRecargaTrancciones
 
 
 
-    Public Function reporteRecargaTran(_FechaInicial As Date, _FechaFinal As Date, _Codigo As Integer)
+    Public Function reporteRecargaTran(_FechaInicial As Date, _FechaFinal As Date, _Codigo As Integer, _Provedor As String, _Todos As String)
 
         Try
 
-            Conectado()
+            conectado()
 
             Dim _ListaTran As New List(Of Ereporterecargatran)
 
@@ -24,10 +24,11 @@ Public Class CCCReporteRecargaTrancciones
             _Cmd.Connection = _cnn
 
 
-            _Cmd.Parameters.Add("@FechaInicial", SqlDbType.VarChar, 50).Value = tranformaFecha(_FechaInicial)
+            _Cmd.Parameters.Add("@FechaInicial", SqlDbType.VarChar, 50).Value = _FechaInicial
             _Cmd.Parameters.Add("@FechaFinal", SqlDbType.VarChar, 50).Value = tranformaFecha(_FechaFinal)
-            _Cmd.Parameters.Add("@CodigoAgente", SqlDbType.VarChar, 10).Value = _Codigo
-
+            _Cmd.Parameters.Add("@CodigoAgente", SqlDbType.VarChar, 20).Value = _Codigo
+            _Cmd.Parameters.Add("@Proveedor", SqlDbType.VarChar, 20).Value = _Provedor
+            _Cmd.Parameters.Add("@Todos", SqlDbType.VarChar, 20).Value = _Todos
             Dim _Leer As SqlDataReader = _Cmd.ExecuteReader
 
             While _Leer.Read
@@ -64,7 +65,7 @@ Public Class CCCReporteRecargaTrancciones
                 _ListaTran.Add(_Entidad)
 
             End While
-          
+
 
 
 
@@ -75,7 +76,7 @@ Public Class CCCReporteRecargaTrancciones
 
 
         Catch ex As Exception
-            MsgBox("Error al Executar el Procedimiento")
+            MsgBox(ex.Message)
         End Try
         Return False
 

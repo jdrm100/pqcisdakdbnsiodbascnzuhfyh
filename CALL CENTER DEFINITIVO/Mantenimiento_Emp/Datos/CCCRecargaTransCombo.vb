@@ -10,7 +10,7 @@ Public Class CCCRecargaTransCombo
     Public Function mostrar() As DataTable
         Try
             conectado()
-            _Cmd = New SqlCommand("CARGA_COMBOZ_RECARGARTRAN")
+            _Cmd = New SqlCommand("[CARGA_COMBOZ_RECARGARTRAN]")
             _Cmd.CommandType = CommandType.StoredProcedure
 
             _Cmd.Connection = _cnn
@@ -22,13 +22,7 @@ Public Class CCCRecargaTransCombo
                 Return _Dt
             End If
 
-
-
             Return Nothing
-
-
-
-
 
 
         Catch ex As Exception

@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class CCCCargarCombozReporLot
-    Inherits Conexion
+    Inherits Coneccion_Recarga
 
     Dim _Cmd As New SqlCommand
 
@@ -12,7 +12,7 @@ Public Class CCCCargarCombozReporLot
 
         Try
             Conectado()
-            _Cmd = New SqlCommand("[CARGAR_COMBOBOZ_REPORTE_LOTERIA]")
+            _Cmd = New SqlCommand("[CARGA_COMBOZ_RECARGARTRAN]")
             _Cmd.CommandType = CommandType.StoredProcedure
             _Cmd.CommandTimeout = 120000
             _Cmd.Connection = _cnn

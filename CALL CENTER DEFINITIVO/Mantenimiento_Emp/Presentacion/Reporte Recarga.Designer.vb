@@ -24,11 +24,12 @@ Partial Class FRMReporte_Recarga
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.chktodos = New System.Windows.Forms.CheckBox()
         Me.dtp_fechafinal = New System.Windows.Forms.DateTimePicker()
         Me.Dtp_fechainicial = New System.Windows.Forms.DateTimePicker()
         Me.txt_agente = New System.Windows.Forms.TextBox()
         Me.cbo_operadora = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lbloperadora = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -47,11 +48,12 @@ Partial Class FRMReporte_Recarga
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.chktodos)
         Me.GroupBox1.Controls.Add(Me.dtp_fechafinal)
         Me.GroupBox1.Controls.Add(Me.Dtp_fechainicial)
         Me.GroupBox1.Controls.Add(Me.txt_agente)
         Me.GroupBox1.Controls.Add(Me.cbo_operadora)
-        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.lbloperadora)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -63,6 +65,20 @@ Partial Class FRMReporte_Recarga
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Parametro Generales"
+        '
+        'chktodos
+        '
+        Me.chktodos.AutoSize = True
+        Me.chktodos.Checked = True
+        Me.chktodos.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chktodos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chktodos.ForeColor = System.Drawing.Color.Black
+        Me.chktodos.Location = New System.Drawing.Point(309, 134)
+        Me.chktodos.Name = "chktodos"
+        Me.chktodos.Size = New System.Drawing.Size(72, 20)
+        Me.chktodos.TabIndex = 8
+        Me.chktodos.Text = "Todos"
+        Me.chktodos.UseVisualStyleBackColor = True
         '
         'dtp_fechafinal
         '
@@ -93,19 +109,19 @@ Partial Class FRMReporte_Recarga
         Me.cbo_operadora.FormattingEnabled = True
         Me.cbo_operadora.Location = New System.Drawing.Point(122, 132)
         Me.cbo_operadora.Name = "cbo_operadora"
-        Me.cbo_operadora.Size = New System.Drawing.Size(228, 24)
+        Me.cbo_operadora.Size = New System.Drawing.Size(181, 24)
         Me.cbo_operadora.TabIndex = 4
         '
-        'Label4
+        'lbloperadora
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(12, 135)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 13)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Operadora:"
+        Me.lbloperadora.AutoSize = True
+        Me.lbloperadora.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbloperadora.ForeColor = System.Drawing.Color.Black
+        Me.lbloperadora.Location = New System.Drawing.Point(12, 135)
+        Me.lbloperadora.Name = "lbloperadora"
+        Me.lbloperadora.Size = New System.Drawing.Size(70, 13)
+        Me.lbloperadora.TabIndex = 3
+        Me.lbloperadora.Text = "Operadora:"
         '
         'Label3
         '
@@ -198,7 +214,7 @@ Partial Class FRMReporte_Recarga
         Me.btn_imprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_imprimir.Image = Global.My.Resources.Resources.if_Printer_71593
         Me.btn_imprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_imprimir.Location = New System.Drawing.Point(14, 219)
+        Me.btn_imprimir.Location = New System.Drawing.Point(10, 219)
         Me.btn_imprimir.Name = "btn_imprimir"
         Me.btn_imprimir.Size = New System.Drawing.Size(120, 42)
         Me.btn_imprimir.TabIndex = 2
@@ -229,7 +245,7 @@ Partial Class FRMReporte_Recarga
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(716, 260)
+        Me.ClientSize = New System.Drawing.Size(716, 278)
         Me.Controls.Add(Me.btn_salir)
         Me.Controls.Add(Me.btn_imprimir)
         Me.Controls.Add(Me.GroupBox2)
@@ -254,7 +270,7 @@ Partial Class FRMReporte_Recarga
     Friend WithEvents Dtp_fechainicial As System.Windows.Forms.DateTimePicker
     Friend WithEvents txt_agente As System.Windows.Forms.TextBox
     Friend WithEvents cbo_operadora As System.Windows.Forms.ComboBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents lbloperadora As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -266,4 +282,5 @@ Partial Class FRMReporte_Recarga
     Friend WithEvents btn_salir As System.Windows.Forms.Button
     Friend WithEvents Errorvalicion As System.Windows.Forms.ErrorProvider
     Friend WithEvents tt_mensaje As System.Windows.Forms.ToolTip
+    Friend WithEvents chktodos As CheckBox
 End Class

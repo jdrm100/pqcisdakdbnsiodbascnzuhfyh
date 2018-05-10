@@ -175,83 +175,73 @@ Public Class Principal
 
         ' Gestor TECNICO  NIVEL 0
         'Gestor COBROS NIVEL 1
-        'Opciones de los Encargados de Soporte Tecnico alos Gestores Tecnico NIVEL 2
-        'Opciones de los Encargados de Soporte Cobros alos Gestores Cobros NIVEL 3
+        'Opciones de los Encargados de Soporte Tecnico a los Gestores Tecnico NIVEL 2
+        'Opciones de los Encargados de Soporte Cobros a los Gestores Cobros NIVEL 3
         'Administradores ,Encargados Call Center Cobros,Tecnicos y Tecnologia NIVEL 4
 
 
 
 
         If Login.nivel = 0 Then
-            'Gestor Tecnico'
-            AdministracionToolStripMenuItem.Visible = False 'Menu principal Administracion contiene
-            ' Propecciones y Empleados  
-            tsl_Form1.Visible = False 'Barra de Call Center Cobros'
-            FileMenu.Visible = False 'Menu de Call Center Cobros
-            mnu_Form7.Visible = False 'Mantemientos de 4 pasos Componentes
-            MantComponentesCaracteristicasToolStripMenuItem.Visible = False 'Mantenimiento componentes y caracteristicas
-            RepctToolStripMenuItem.Visible = False
+            ''Gestor Tecnico'
+            mnu_Reg01.Visible = False
+            mnu_bloqueos.Visible = False
+            mnu_Form3.Visible = False
+            mnu_sol_nobloqueo.Visible = False
+            SolDesbloqueoToolStripMenuItem.Visible = False
+            ACToolStripMenuItem.Visible = False
+            SolAjusteToolStripMenuItem.Visible = False
+            mnu_Form7.Visible = False
+            MantComponentesCaracteristicasToolStripMenuItem.Visible = False
+            tsl_Form1.Visible = False
+            ProspeccionesToolStripMenuItem.Visible = False
+            EmpleadosToolStripMenuItem.Visible = False
             ActualizarBalanceToolStripMenuItem.Visible = False
+
+
+            ActualizarBalanceToolStripMenuItem.Visible = False
+            ReporteDeAntiguedadToolStripMenuItem.Visible = False
+            ReporteDeAntiguedadDetalladoToolStripMenuItem.Visible = False
+            ReporteDeComisionesToolStripMenuItem.Visible = False
+            ReporteDeLoteriaToolStripMenuItem.Visible = False
+            ReporteDeRecargasToolStripMenuItem.Visible = False
+            ReporteCxcToolStripMenuItem.Visible = False
+            ReporteContabilidadToolStripMenuItem.Visible = False
+            ReporteDeBloqueoRetiroToolStripMenuItem.Visible = False
+            ReporteDeLlamadasToolStripMenuItem.Visible = False
+
         End If
         If Login.nivel = 1 Then
             'Gestor Cobros'
-            AdministracionToolStripMenuItem.Visible = False 'Menu principal Administracion contiene
-            ' Propecciones y Empleados Call Center Tecnico
-            tsl_gastos.Visible = False 'Barra de Call Center Tecnicos'
-            SeguridadMenuToolStripMenuItem.Visible = False 'Menu de Soporte de Call Center Tecnicos
-            mnu_bloqueos.Visible = False 'Bloquear
-            mnu_Form3.Visible = False 'Desbloquear
-            mnu_sol_nobloqueo.Visible = False 'No Bloquear
-            SolDesbloqueoToolStripMenuItem.Visible = False 'Sol-Desbloqueo
-            ACToolStripMenuItem.Visible = False 'Acuerdo de Pago
-            SolAjusteToolStripMenuItem.Visible = False 'Ajuste
+            mnu_Reg01.Visible = False
+            mnu_bloqueos.Visible = False
+            mnu_Form3.Visible = False
+            mnu_sol_nobloqueo.Visible = False
+            SolDesbloqueoToolStripMenuItem.Visible = False
+            ACToolStripMenuItem.Visible = False
+            SolAjusteToolStripMenuItem.Visible = False
+            mnu_Form7.Visible = False
+            MantComponentesCaracteristicasToolStripMenuItem.Visible = False
+            tsl_Form1.Visible = False
 
+            ProspeccionesToolStripMenuItem.Visible = False
+            EmpleadosToolStripMenuItem.Visible = False
+            ReporteCxcToolStripMenuItem.Visible = False
+            ReporteContabilidadToolStripMenuItem.Visible = False
+            ReporteDeLlamadasToolStripMenuItem.Visible = False
         End If
 
         'Opciones de los Encargados de Soporte Tecnico alos Gestores Tecnico NIVEL 2
         If Login.nivel = 2 Then
             'Gestor Tecnico Privilegio al Call Center Cobros'
-            AdministracionToolStripMenuItem.Visible = False 'Menu principal Administracion contiene
-            ' Propecciones y Empleados  
-            mnu_bloqueos.Visible = False 'Bloquear
-            mnu_Form3.Visible = False 'Desbloquear
-            mnu_sol_nobloqueo.Visible = False 'No Bloquear
-            SolDesbloqueoToolStripMenuItem.Visible = False 'Sol-Desbloqueo
-            ACToolStripMenuItem.Visible = False 'Acuerdo de Pago
-            SolAjusteToolStripMenuItem.Visible = False 'Ajuste
-            mnu_Form7.Visible = False 'Mantemientos de 4 pasos Componentes
-            MantComponentesCaracteristicasToolStripMenuItem.Visible = False 'Mantenimiento componentes y caracteristicas
 
-            mnu_Form7.Visible = False 'Mantemientos de 4 pasos Componentes
         End If
 
-        'Opciones de los Encargados de Soporte Cobros alos Gestores Cobros NIVEL 3
-        If Login.nivel = 3 Then
-            'Gestor Cobros Privilegio al Call Center Tecnicos'
-            AdministracionToolStripMenuItem.Visible = False 'Menu principal Administracion contiene
-            ' Propecciones y Empleados  
-            mnu_bloqueos.Visible = False 'Bloquear
-            mnu_Form3.Visible = False 'Desbloquear
-            mnu_sol_nobloqueo.Visible = False 'No Bloquear
-            SolDesbloqueoToolStripMenuItem.Visible = False 'Sol-Desbloqueo
-            ACToolStripMenuItem.Visible = False 'Acuerdo de Pago
-            SolAjusteToolStripMenuItem.Visible = False 'Ajuste
-            mnu_Form7.Visible = False 'Mantemientos de 4 pasos Componentes
-            MantComponentesCaracteristicasToolStripMenuItem.Visible = False 'Mantenimiento componentes y caracteristicas
 
-            mnu_Form7.Visible = False 'Mantemientos de 4 pasos Componentes
-        End If
+
 
         'Administradores ,Encargados Call Center Cobros,Tecnicos y Tecnologia NIVEL 4
-        If Login.nivel = 4 Then
-            'Administradores ,Encargados Call Center Cobros,Tecnicos y Tecnologia NIVEL 4
 
-            FileMenu.Visible = True 'Menu de Call Center Cobros
-            AdministracionToolStripMenuItem.Visible = True 'Menu principal Administracion contiene
-            ' Propecciones y Empleados Call Center Tecnico
-            SeguridadMenuToolStripMenuItem.Visible = True 'Menu de Soporte de Call Center Tecnicos
-            RepctToolStripMenuItem.Visible = True
-        End If
     End Sub
 
     Private Sub RepctToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepctToolStripMenuItem.Click
@@ -281,8 +271,8 @@ Public Class Principal
     End Sub
 
     Private Sub ReporteDeLlamadasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeLlamadasToolStripMenuItem.Click
-        Dim _Mostrar As New frmReporte_Loteria
-        _Mostrar.Show()
+        'Dim _Mostrar As New frmReporte_Loteria
+        '_Mostrar.Show()
     End Sub
 
     Private Sub ReporteContabilidadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteContabilidadToolStripMenuItem.Click
@@ -291,5 +281,13 @@ Public Class Principal
 
     Private Sub ReporteCxcToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteCxcToolStripMenuItem.Click
         ProcesoCXC.Show()
+    End Sub
+
+    Private Sub ReporteDeLoteriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeLoteriaToolStripMenuItem.Click
+        frmReporte_Loteria.Show()
+    End Sub
+
+    Private Sub ReporteDeBloqueoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeBloqueoRetiroToolStripMenuItem.Click
+        Bloqueado_Retirado.Show()
     End Sub
 End Class
