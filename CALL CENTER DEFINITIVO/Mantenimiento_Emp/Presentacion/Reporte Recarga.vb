@@ -79,14 +79,14 @@
                         _todos = "1"
                     End If
                     Dim _Buscar As New CCCReporteRecargaTrancciones
-                        Dim _Lista As List(Of Ereporterecargatran) = _Buscar.reporteRecargaTran(Dtp_fechainicial.Value.Date, dtp_fechafinal.Value.Date, Convert.ToInt64(txt_agente.Text), cbo_operadora.SelectedValue, _todos)
+                    Dim _Lista As List(Of Ereporterecargatran) = _Buscar.reporteRecargaTran(Dtp_fechainicial.Value.Date, dtp_fechafinal.Value.Date, Convert.ToInt64(txt_agente.Text), cbo_operadora.SelectedValue, _todos)
 
                     Dim _Mostar As New Ssitema_de_Facturacion_Transanciones(_Lista)
-                        _Mostar.Show()
+                    _Mostar.Show()
 
 
 
-                    End If
+                End If
 
             Catch ex As Exception
                 MsgBox(ex.Message)
