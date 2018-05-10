@@ -275,7 +275,7 @@ Public Class Ccc_AntiguedadGestor
             Else
                 _Registro._Agente = ""
             End If
-
+            'fghfg
             If vcurso = True Then
                 If _Leer("VENTA_EN_CURSO") IsNot DBNull.Value Then
                     _Registro._SemanaCurso = _Leer("VENTA_EN_CURSO").ToString
