@@ -5,7 +5,7 @@ Public Class CCCRecargaDetallado
     Inherits Conexion
     Protected _Cmd As New SqlCommand
     Dim _Mostar As String
-
+    'hjgh' 
 
     Public Function recargarDetallada(_FechaIncial As Date, _FechaFinal As Date, _Codigo As Integer)
 

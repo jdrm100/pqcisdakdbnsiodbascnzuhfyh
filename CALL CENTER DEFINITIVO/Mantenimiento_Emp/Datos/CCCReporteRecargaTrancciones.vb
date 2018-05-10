@@ -15,7 +15,7 @@ Public Class CCCReporteRecargaTrancciones
         Try
 
             conectado()
-
+            'fghg'
             Dim _ListaTran As New List(Of Ereporterecargatran)
 
             _Cmd = New SqlCommand("REPORTE_RECARGA_TRANSACCIONES")

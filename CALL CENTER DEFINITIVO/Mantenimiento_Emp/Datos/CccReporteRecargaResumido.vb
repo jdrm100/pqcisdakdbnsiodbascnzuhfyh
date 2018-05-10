@@ -24,7 +24,7 @@ Public Class CccReporteRecargaResumido
             Dim _Leer As SqlDataReader = _Cmd.ExecuteReader
             Dim _Total As Decimal = 0
             While _Leer.Read
-
+                'dfg'
                 Dim _ListaRecarga As New Ereporterecargaresumido
 
                 If _Leer("Agente") IsNot DBNull.Value Then

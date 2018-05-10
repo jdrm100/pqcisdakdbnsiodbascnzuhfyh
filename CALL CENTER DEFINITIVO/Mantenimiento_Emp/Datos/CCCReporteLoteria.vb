@@ -8,7 +8,7 @@ Public Class CCCReporteLoteria
 
 
 
-    'jdfjhfhkfdroga
+    'jdfjhfhkfdrogag
 
     Public Function reporteLoteria(_FechaInicial As Date, _FechaFinal As Date, _Agente As String, juego As String, _todos As String) As List(Of EReporteLoteria)
 

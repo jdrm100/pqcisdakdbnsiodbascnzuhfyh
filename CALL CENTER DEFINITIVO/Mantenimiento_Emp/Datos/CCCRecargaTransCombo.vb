@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class CCCRecargaTransCombo
 
-
+    'ghgh'
     Inherits Coneccion_Recarga
 
     Protected _Cmd As New SqlCommand
