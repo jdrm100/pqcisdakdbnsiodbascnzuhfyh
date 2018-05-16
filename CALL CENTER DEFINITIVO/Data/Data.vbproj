@@ -73,6 +73,8 @@
     <Import Include="System.Diagnostics" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataInterfaces\IDaoFactory.vb" />
+    <Compile Include="DataInterfaces\IGenericDao.vb" />
     <Compile Include="GenericNHibernateDao.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

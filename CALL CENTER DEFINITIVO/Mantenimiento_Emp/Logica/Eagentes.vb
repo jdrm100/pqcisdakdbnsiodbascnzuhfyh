@@ -1,5 +1,5 @@
 ﻿Public Class Eagentes
-    Property _Agente As String
+    'Property _Agente As String f
     Property _Nombre As String
     Property _NomRep As String
     Property _Tel1 As String
