@@ -7,7 +7,7 @@
     Property _PorcientodeAcumulado As Decimal
     Property _porcientoTotalAcumulado As Decimal
     Property _ReservadeAcumulado As Decimal
-    Property _TotaldeContribuccion As Decimal
+    Property _TotaldeContribuccion As Decimal ''
     Property _Total1 As Decimal
     Property _Total2 As Decimal
     Property _Terminales As Integer

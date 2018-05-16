@@ -5,7 +5,7 @@ Public Class Conexionpega
     Protected _ccn As SqlConnection
     Protected Function _conectar()
         Try
-
+            ''
             _ccn = New SqlConnection("Data Source=10.0.0.8\SERVERR2;Initial Catalog=lrc_r4;User ID=lrc;password=lrc12345")
             _ccn.Open()
             Return True

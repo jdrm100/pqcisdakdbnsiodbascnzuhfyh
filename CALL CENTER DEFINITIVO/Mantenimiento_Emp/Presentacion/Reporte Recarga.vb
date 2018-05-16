@@ -150,7 +150,7 @@
 
     Private Sub FRMReporte_Recarga_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarProveedorComboz()
-
+        ''
     End Sub
 
     Private Sub rd_transacciones_CheckedChanged(sender As Object, e As EventArgs) Handles rd_transacciones.CheckedChanged

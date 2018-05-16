@@ -4,7 +4,7 @@ Public Class Contabreportepega3
     Inherits Conexion1
     Dim _cmd As New SqlCommand
 
-
+    ''
     'Public Function ReportePega3(_Fechainicial As Date, _Fechafinal As Date, _Codigoagente As Integer) As List(Of EreportePega3)
 
     '    '    Try

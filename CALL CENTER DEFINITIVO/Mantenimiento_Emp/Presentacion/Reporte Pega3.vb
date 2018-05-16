@@ -23,7 +23,7 @@
     End Sub
 
     Private Sub CrystalReportViewer2_Load(sender As Object, e As EventArgs) Handles CrystalReportViewer2.Load
-        Dim _Reporte As New AcumuladoPega3ContY
+        Dim _Reporte As New AcumuladoPega3ContY ''
         _Reporte.SetDataSource(_Origen)
         CrystalReportViewer2.ReportSource = _Reporte
     End Sub

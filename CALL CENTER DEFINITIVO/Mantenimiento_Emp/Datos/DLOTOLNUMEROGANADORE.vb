@@ -6,7 +6,7 @@ Imports System.Data.SqlClient
 Public Class DLOTOLNUMEROGANADORE
     Inherits Conexion1
     Dim _Cmd As New SqlCommand
-
+    ''
     Public Function numeroGanadore()
 
         Try
