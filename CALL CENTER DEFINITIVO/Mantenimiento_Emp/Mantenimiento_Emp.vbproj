@@ -295,11 +295,6 @@
     <Compile Include="Casos\webform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dataset\AcumuladoPega31.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AcumuladoPega3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Dataset\AntiguedaddeSaldo.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -337,7 +332,6 @@
       <DependentUpon>ReporteRecargaTran.xsd</DependentUpon>
     </Compile>
     <Compile Include="Datos\CccAntiguedadDetalladovb.vb" />
-    <Compile Include="Datos\CcccAcumuladoPega3.vb" />
     <Compile Include="Datos\CCCCargarCombozReporLot.vb" />
     <Compile Include="Datos\CCCHistorialAgenteRetirado.vb" />
     <Compile Include="Datos\CCCRecargaDetallado.vb" />
@@ -358,7 +352,6 @@
     <Compile Include="Datos\Coneccion_Recarga.vb" />
     <Compile Include="Datos\Conexion1.vb" />
     <Compile Include="Datos\Conexion.vb" />
-    <Compile Include="Datos\Conexionpega.vb" />
     <Compile Include="Datos\Contabreportepega3.vb" />
     <Compile Include="Datos\DLOTOLNUMEROGANADORE.vb" />
     <Compile Include="Dialog1.Designer.vb">
@@ -373,7 +366,6 @@
     <Compile Include="Form4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logica\EacumuladoP3.vb" />
     <Compile Include="Logica\Eagentes.vb" />
     <Compile Include="Logica\Eantiguedadsaldo.vb" />
     <Compile Include="Logica\Eantiguedadsaldogestor.vb" />
@@ -400,12 +392,6 @@
       <DependentUpon>ActualizarBalances.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\ActualizarBalances.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\AcumladoPega3.designer.vb">
-      <DependentUpon>AcumladoPega3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\AcumladoPega3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\antCXC_VIEWER.Designer.vb">
@@ -492,12 +478,6 @@
     <Compile Include="Presentacion\Reporte de Antiguedad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Reporte Pega3.designer.vb">
-      <DependentUpon>Reporte Pega3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reporte Pega3.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\Reporte Recarga.Designer.vb">
       <DependentUpon>Reporte Recarga.vb</DependentUpon>
     </Compile>
@@ -557,12 +537,6 @@
     </Compile>
     <Compile Include="Presentacion\Ssitema de Facturacion Transanciones.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reporte\AcumuladoPega3ContY.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AcumuladoPega3ContY.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reporte\AntCXC.vb">
       <AutoGen>True</AutoGen>
@@ -813,9 +787,6 @@
     <EmbeddedResource Include="Presentacion\ActualizarBalances.resx">
       <DependentUpon>ActualizarBalances.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\AcumladoPega3.resx">
-      <DependentUpon>AcumladoPega3.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\antCXC_VIEWER.resx">
       <DependentUpon>antCXC_VIEWER.vb</DependentUpon>
     </EmbeddedResource>
@@ -858,9 +829,6 @@
     <EmbeddedResource Include="Presentacion\Reporte de Antiguedad.resx">
       <DependentUpon>Reporte de Antiguedad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reporte Pega3.resx">
-      <DependentUpon>Reporte Pega3.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reporte Recarga.resx">
       <DependentUpon>Reporte Recarga.vb</DependentUpon>
     </EmbeddedResource>
@@ -890,10 +858,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ssitema de Facturacion Transanciones.resx">
       <DependentUpon>Ssitema de Facturacion Transanciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reporte\AcumuladoPega3ContY.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>AcumuladoPega3ContY.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte\AntCXC.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -985,17 +949,6 @@
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Dataset\AcumuladoPega3.xsc">
-      <DependentUpon>AcumuladoPega3.xsd</DependentUpon>
-    </None>
-    <None Include="Dataset\AcumuladoPega3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AcumuladoPega31.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Dataset\AcumuladoPega3.xss">
-      <DependentUpon>AcumuladoPega3.xsd</DependentUpon>
     </None>
     <None Include="Dataset\AntiguedaddeSaldo.xsc">
       <DependentUpon>AntiguedaddeSaldo.xsd</DependentUpon>
