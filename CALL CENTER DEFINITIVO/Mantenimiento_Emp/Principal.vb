@@ -184,7 +184,6 @@ Public Class Principal
 
         If Login.nivel = 0 Then
             ''Gestor Tecnico'
-
             mnu_Reg01.Visible = False
             mnu_bloqueos.Visible = False
             mnu_Form3.Visible = False
@@ -214,8 +213,7 @@ Public Class Principal
         End If
         If Login.nivel = 1 Then
             'Gestor Cobros'
-            tsl_gastos.Visible = False
-
+            mnu_Reg01.Visible = False
             mnu_bloqueos.Visible = False
             mnu_Form3.Visible = False
             mnu_sol_nobloqueo.Visible = False
@@ -233,55 +231,9 @@ Public Class Principal
             ReporteDeLlamadasToolStripMenuItem.Visible = False
         End If
 
-        'Gestor Tecnico y Cobros Privilegio alos dos Call Center '
+        'Opciones de los Encargados de Soporte Tecnico alos Gestores Tecnico NIVEL 2
         If Login.nivel = 2 Then
-            'Gestor Tecnico y Cobros Privilegio alos dos Call Center '
-            mnu_Reg01.Visible = False
-            mnu_bloqueos.Visible = False
-            mnu_Form3.Visible = False
-            mnu_sol_nobloqueo.Visible = False
-            SolDesbloqueoToolStripMenuItem.Visible = False
-            ACToolStripMenuItem.Visible = False
-            SolAjusteToolStripMenuItem.Visible = False
-            mnu_Form7.Visible = False
-            MantComponentesCaracteristicasToolStripMenuItem.Visible = False
-            tsl_Form1.Visible = False
-            ProspeccionesToolStripMenuItem.Visible = False
-            EmpleadosToolStripMenuItem.Visible = False
-            ActualizarBalanceToolStripMenuItem.Visible = False
-
-
-            ActualizarBalanceToolStripMenuItem.Visible = False
-
-
-        End If
-
-        If Login.nivel = 3 Then
-            mnu_Reg01.Visible = False
-            mnu_bloqueos.Visible = False
-            mnu_Form3.Visible = False
-            mnu_sol_nobloqueo.Visible = False
-            SolDesbloqueoToolStripMenuItem.Visible = False
-            ACToolStripMenuItem.Visible = False
-            SolAjusteToolStripMenuItem.Visible = False
-            mnu_Form7.Visible = False
-            MantComponentesCaracteristicasToolStripMenuItem.Visible = False
-            tsl_Form1.Visible = False
-            ProspeccionesToolStripMenuItem.Visible = False
-            EmpleadosToolStripMenuItem.Visible = False
-            ActualizarBalanceToolStripMenuItem.Visible = False
-
-
-            ActualizarBalanceToolStripMenuItem.Visible = False
-            ReporteDeAntiguedadToolStripMenuItem.Visible = False
-            ReporteDeAntiguedadDetalladoToolStripMenuItem.Visible = False
-            ReporteDeComisionesToolStripMenuItem.Visible = False
-            ReporteDeLoteriaToolStripMenuItem.Visible = False
-            ReporteDeRecargasToolStripMenuItem.Visible = False
-            ReporteCxcToolStripMenuItem.Visible = False
-            ReporteContabilidadToolStripMenuItem.Visible = False
-            ReporteDeBloqueoRetiroToolStripMenuItem.Visible = False
-            ReporteDeLlamadasToolStripMenuItem.Visible = False
+            'Gestor Tecnico Privilegio al Call Center Cobros'
 
         End If
 
@@ -300,7 +252,7 @@ Public Class Principal
         ActualizarBalances.Show()
     End Sub
 
-    Private Sub ReporteDeAntiguedadToolStripMenuItem_Click(sender As Object, e As EventArgs)
+    Private Sub ReporteDeAntiguedadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeAntiguedadToolStripMenuItem.Click
         Filtrar.Show()
     End Sub
 
@@ -337,17 +289,5 @@ Public Class Principal
 
     Private Sub ReporteDeBloqueoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeBloqueoRetiroToolStripMenuItem.Click
         Bloqueado_Retirado.Show()
-    End Sub
-
-    Private Sub ReToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReToolStripMenuItem.Click
-
-    End Sub
-
-    Private Function ReporteDeAntiguedadToolStripMenuItem() As Object
-        Throw New NotImplementedException
-    End Function
-
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        AcumladoPega3.Show()
     End Sub
 End Class
