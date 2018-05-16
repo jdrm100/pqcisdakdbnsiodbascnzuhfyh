@@ -97,7 +97,7 @@ Public Class Principal
     End Sub
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         privilegioUsuario()
-        'fg'
+        'fcfgvcgvg'
 
     End Sub
 
