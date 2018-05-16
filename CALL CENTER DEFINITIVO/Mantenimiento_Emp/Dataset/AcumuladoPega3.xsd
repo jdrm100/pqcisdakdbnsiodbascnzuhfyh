@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AcumuladoPega3" targetNamespace="http://tempuri.org/AcumuladoPega3.xsd" xmlns:mstns="http://tempuri.org/AcumuladoPega3.xsd" xmlns="http://tempuri.org/AcumuladoPega3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AcumuladoPega3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AcumuladoPega3" msprop:Generator_UserDSName="AcumuladoPega3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AcumuladoPega3" msprop:Generator_TableClassName="AcumuladoPega3DataTable" msprop:Generator_TableVarName="tableAcumuladoPega3" msprop:Generator_RowChangedName="AcumuladoPega3RowChanged" msprop:Generator_TablePropName="_AcumuladoPega3" msprop:Generator_RowDeletingName="AcumuladoPega3RowDeleting" msprop:Generator_RowChangingName="AcumuladoPega3RowChanging" msprop:Generator_RowEvHandlerName="AcumuladoPega3RowChangeEventHandler" msprop:Generator_RowDeletedName="AcumuladoPega3RowDeleted" msprop:Generator_RowClassName="AcumuladoPega3Row" msprop:Generator_UserTableName="AcumuladoPega3" msprop:Generator_RowEvArgName="AcumuladoPega3RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_NumeroProvincia" msprop:Generator_ColumnVarNameInTable="column_NumeroProvincia" msprop:Generator_ColumnPropNameInRow="_NumeroProvincia" msprop:Generator_ColumnPropNameInTable="_NumeroProvinciaColumn" msprop:Generator_UserColumnName="_NumeroProvincia" type="xs:int" minOccurs="0" />
+              <xs:element name="_Provincias" msprop:Generator_ColumnVarNameInTable="column_Provincias" msprop:Generator_ColumnPropNameInRow="_Provincias" msprop:Generator_ColumnPropNameInTable="_ProvinciasColumn" msprop:Generator_UserColumnName="_Provincias" type="xs:string" minOccurs="0" />
+              <xs:element name="_TotalTerminalesPr" msprop:Generator_ColumnVarNameInTable="column_TotalTerminalesPr" msprop:Generator_ColumnPropNameInRow="_TotalTerminalesPr" msprop:Generator_ColumnPropNameInTable="_TotalTerminalesPrColumn" msprop:Generator_UserColumnName="_TotalTerminalesPr" type="xs:int" minOccurs="0" />
+              <xs:element name="_PorcientoporTerminalPro" msprop:Generator_ColumnVarNameInTable="column_PorcientoporTerminalPro" msprop:Generator_ColumnPropNameInRow="_PorcientoporTerminalPro" msprop:Generator_ColumnPropNameInTable="_PorcientoporTerminalProColumn" msprop:Generator_UserColumnName="_PorcientoporTerminalPro" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Lotoreal" msprop:Generator_ColumnVarNameInTable="column_Lotoreal" msprop:Generator_ColumnPropNameInRow="_Lotoreal" msprop:Generator_ColumnPropNameInTable="_LotorealColumn" msprop:Generator_UserColumnName="_Lotoreal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_PorcientodeAcumulado" msprop:Generator_ColumnVarNameInTable="column_PorcientodeAcumulado" msprop:Generator_ColumnPropNameInRow="_PorcientodeAcumulado" msprop:Generator_ColumnPropNameInTable="_PorcientodeAcumuladoColumn" msprop:Generator_UserColumnName="_PorcientodeAcumulado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_porcientoTotalAcumulado" msprop:Generator_ColumnVarNameInTable="column_porcientoTotalAcumulado" msprop:Generator_ColumnPropNameInRow="_porcientoTotalAcumulado" msprop:Generator_ColumnPropNameInTable="_porcientoTotalAcumuladoColumn" msprop:Generator_UserColumnName="_porcientoTotalAcumulado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_ReservadeAcumulado" msprop:Generator_ColumnVarNameInTable="column_ReservadeAcumulado" msprop:Generator_ColumnPropNameInRow="_ReservadeAcumulado" msprop:Generator_ColumnPropNameInTable="_ReservadeAcumuladoColumn" msprop:Generator_UserColumnName="_ReservadeAcumulado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_TotaldeContribuccion" msprop:Generator_ColumnVarNameInTable="column_TotaldeContribuccion" msprop:Generator_ColumnPropNameInRow="_TotaldeContribuccion" msprop:Generator_ColumnPropNameInTable="_TotaldeContribuccionColumn" msprop:Generator_UserColumnName="_TotaldeContribuccion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total1" msprop:Generator_ColumnVarNameInTable="column_Total1" msprop:Generator_ColumnPropNameInRow="_Total1" msprop:Generator_ColumnPropNameInTable="_Total1Column" msprop:Generator_UserColumnName="_Total1" type="xs:int" minOccurs="0" />
+              <xs:element name="_Total2" msprop:Generator_ColumnVarNameInTable="column_Total2" msprop:Generator_ColumnPropNameInRow="_Total2" msprop:Generator_ColumnPropNameInTable="_Total2Column" msprop:Generator_UserColumnName="_Total2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Terminales" msprop:Generator_ColumnVarNameInTable="column_Terminales" msprop:Generator_ColumnPropNameInRow="_Terminales" msprop:Generator_ColumnPropNameInTable="_TerminalesColumn" msprop:Generator_UserColumnName="_Terminales" type="xs:int" minOccurs="0" />
+              <xs:element name="_Total3" msprop:Generator_ColumnVarNameInTable="column_Total3" msprop:Generator_ColumnPropNameInRow="_Total3" msprop:Generator_ColumnPropNameInTable="_Total3Column" msprop:Generator_UserColumnName="_Total3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total4" msprop:Generator_ColumnVarNameInTable="column_Total4" msprop:Generator_ColumnPropNameInRow="_Total4" msprop:Generator_ColumnPropNameInTable="_Total4Column" msprop:Generator_UserColumnName="_Total4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total5" msprop:Generator_ColumnVarNameInTable="column_Total5" msprop:Generator_ColumnPropNameInRow="_Total5" msprop:Generator_ColumnPropNameInTable="_Total5Column" msprop:Generator_UserColumnName="_Total5" type="xs:int" minOccurs="0" />
+              <xs:element name="_Total6" msprop:Generator_ColumnVarNameInTable="column_Total6" msprop:Generator_ColumnPropNameInRow="_Total6" msprop:Generator_ColumnPropNameInTable="_Total6Column" msprop:Generator_UserColumnName="_Total6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_PorcientoContJackpot" msprop:Generator_ColumnVarNameInTable="column_PorcientoContJackpot" msprop:Generator_ColumnPropNameInRow="_PorcientoContJackpot" msprop:Generator_ColumnPropNameInTable="_PorcientoContJackpotColumn" msprop:Generator_UserColumnName="_PorcientoContJackpot" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total7" msprop:Generator_ColumnVarNameInTable="column_Total7" msprop:Generator_ColumnPropNameInRow="_Total7" msprop:Generator_ColumnPropNameInTable="_Total7Column" msprop:Generator_UserColumnName="_Total7" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total8" msprop:Generator_ColumnVarNameInTable="column_Total8" msprop:Generator_ColumnPropNameInRow="_Total8" msprop:Generator_ColumnPropNameInTable="_Total8Column" msprop:Generator_UserColumnName="_Total8" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total9" msprop:Generator_ColumnVarNameInTable="column_Total9" msprop:Generator_ColumnPropNameInRow="_Total9" msprop:Generator_ColumnPropNameInTable="_Total9Column" msprop:Generator_UserColumnName="_Total9" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Total10" msprop:Generator_ColumnVarNameInTable="column_Total10" msprop:Generator_ColumnPropNameInRow="_Total10" msprop:Generator_ColumnPropNameInTable="_Total10Column" msprop:Generator_UserColumnName="_Total10" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_TotalporcientoTer" msprop:Generator_ColumnVarNameInTable="column_TotalporcientoTer" msprop:Generator_ColumnPropNameInRow="_TotalporcientoTer" msprop:Generator_ColumnPropNameInTable="_TotalporcientoTerColumn" msprop:Generator_UserColumnName="_TotalporcientoTer" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_TotaldeLotoreal" msprop:Generator_ColumnVarNameInTable="column_TotaldeLotoreal" msprop:Generator_ColumnPropNameInRow="_TotaldeLotoreal" msprop:Generator_ColumnPropNameInTable="_TotaldeLotorealColumn" msprop:Generator_UserColumnName="_TotaldeLotoreal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Totala" msprop:Generator_ColumnVarNameInTable="column_Totala" msprop:Generator_ColumnPropNameInRow="_Totala" msprop:Generator_ColumnPropNameInTable="_TotalaColumn" msprop:Generator_UserColumnName="_Totala" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_Totalb" msprop:Generator_ColumnVarNameInTable="column_Totalb" msprop:Generator_ColumnPropNameInRow="_Totalb" msprop:Generator_ColumnPropNameInTable="_TotalbColumn" msprop:Generator_UserColumnName="_Totalb" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_FechaID" msprop:Generator_ColumnVarNameInTable="column_FechaID" msprop:Generator_ColumnPropNameInRow="_FechaID" msprop:Generator_ColumnPropNameInTable="_FechaIDColumn" msprop:Generator_UserColumnName="_FechaID" type="xs:string" minOccurs="0" />
+              <xs:element name="_FechaDE" msprop:Generator_ColumnVarNameInTable="column_FechaDE" msprop:Generator_ColumnPropNameInRow="_FechaDE" msprop:Generator_ColumnPropNameInTable="_FechaDEColumn" msprop:Generator_UserColumnName="_FechaDE" type="xs:string" minOccurs="0" />
+              <xs:element name="_Totaljac" msprop:Generator_ColumnVarNameInTable="column_Totaljac" msprop:Generator_ColumnPropNameInRow="_Totaljac" msprop:Generator_ColumnPropNameInTable="_TotaljacColumn" msprop:Generator_UserColumnName="_Totaljac" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

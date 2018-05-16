@@ -41,7 +41,6 @@ Partial Class Principal
         Me.ProspeccionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RepctToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReporteDeAntiguedadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteDeAntiguedadDetalladoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteDeComisionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteDeLoteriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,6 +48,9 @@ Partial Class Principal
         Me.ReporteDeLlamadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteCxcToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteContabilidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteDeBloqueoRetiroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarBalanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.tsl_Form1 = New System.Windows.Forms.ToolStripLabel()
@@ -57,7 +59,6 @@ Partial Class Principal
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.tsl_estado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ReporteDeBloqueoRetiroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -184,27 +185,21 @@ Partial Class Principal
         'ProspeccionesToolStripMenuItem
         '
         Me.ProspeccionesToolStripMenuItem.Name = "ProspeccionesToolStripMenuItem"
-        Me.ProspeccionesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ProspeccionesToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.ProspeccionesToolStripMenuItem.Text = "Prospecciones"
         '
         'EmpleadosToolStripMenuItem
         '
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'RepctToolStripMenuItem
         '
-        Me.RepctToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteDeAntiguedadToolStripMenuItem, Me.ReporteDeAntiguedadDetalladoToolStripMenuItem, Me.ReporteDeComisionesToolStripMenuItem, Me.ReporteDeLoteriaToolStripMenuItem, Me.ReporteDeRecargasToolStripMenuItem, Me.ReporteDeLlamadasToolStripMenuItem, Me.ReporteCxcToolStripMenuItem, Me.ReporteContabilidadToolStripMenuItem, Me.ReporteDeBloqueoRetiroToolStripMenuItem})
+        Me.RepctToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteDeAntiguedadDetalladoToolStripMenuItem, Me.ReporteDeComisionesToolStripMenuItem, Me.ReporteDeLoteriaToolStripMenuItem, Me.ReporteDeRecargasToolStripMenuItem, Me.ReporteDeLlamadasToolStripMenuItem, Me.ReporteCxcToolStripMenuItem, Me.ReporteContabilidadToolStripMenuItem, Me.ReporteDeBloqueoRetiroToolStripMenuItem, Me.ToolStripMenuItem1, Me.ReToolStripMenuItem})
         Me.RepctToolStripMenuItem.Name = "RepctToolStripMenuItem"
         Me.RepctToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.RepctToolStripMenuItem.Text = "Reportes"
-        '
-        'ReporteDeAntiguedadToolStripMenuItem
-        '
-        Me.ReporteDeAntiguedadToolStripMenuItem.Name = "ReporteDeAntiguedadToolStripMenuItem"
-        Me.ReporteDeAntiguedadToolStripMenuItem.Size = New System.Drawing.Size(249, 22)
-        Me.ReporteDeAntiguedadToolStripMenuItem.Text = "Reporte de Antiguedad"
         '
         'ReporteDeAntiguedadDetalladoToolStripMenuItem
         '
@@ -247,6 +242,23 @@ Partial Class Principal
         Me.ReporteContabilidadToolStripMenuItem.Name = "ReporteContabilidadToolStripMenuItem"
         Me.ReporteContabilidadToolStripMenuItem.Size = New System.Drawing.Size(249, 22)
         Me.ReporteContabilidadToolStripMenuItem.Text = "Reporte Contabilidad"
+        '
+        'ReporteDeBloqueoRetiroToolStripMenuItem
+        '
+        Me.ReporteDeBloqueoRetiroToolStripMenuItem.Name = "ReporteDeBloqueoRetiroToolStripMenuItem"
+        Me.ReporteDeBloqueoRetiroToolStripMenuItem.Size = New System.Drawing.Size(249, 22)
+        Me.ReporteDeBloqueoRetiroToolStripMenuItem.Text = "Reporte de Bloqueo/Retiro"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(249, 22)
+        Me.ToolStripMenuItem1.Text = "Reporte Jackport Pega 3"
+        '
+        'ReToolStripMenuItem
+        '
+        Me.ReToolStripMenuItem.Name = "ReToolStripMenuItem"
+        Me.ReToolStripMenuItem.Size = New System.Drawing.Size(249, 22)
         '
         'ActualizarBalanceToolStripMenuItem
         '
@@ -299,12 +311,6 @@ Partial Class Principal
         Me.tsl_estado.Size = New System.Drawing.Size(42, 17)
         Me.tsl_estado.Text = "Estado"
         '
-        'ReporteDeBloqueoRetiroToolStripMenuItem
-        '
-        Me.ReporteDeBloqueoRetiroToolStripMenuItem.Name = "ReporteDeBloqueoRetiroToolStripMenuItem"
-        Me.ReporteDeBloqueoRetiroToolStripMenuItem.Size = New System.Drawing.Size(249, 22)
-        Me.ReporteDeBloqueoRetiroToolStripMenuItem.Text = "Reporte de Bloqueo/Retiro"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -356,7 +362,6 @@ Partial Class Principal
     Friend WithEvents EmpleadosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MantComponentesCaracteristicasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RepctToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ReporteDeAntiguedadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteDeAntiguedadDetalladoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteDeComisionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteDeLoteriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -366,4 +371,6 @@ Partial Class Principal
     Friend WithEvents ReporteCxcToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteContabilidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteDeBloqueoRetiroToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
