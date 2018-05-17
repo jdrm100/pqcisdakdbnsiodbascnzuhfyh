@@ -39,4 +39,6 @@
 
     Property BALANCE_CURSO As String
 
+    Property _Agente As Object
+
 End Class

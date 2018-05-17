@@ -24,13 +24,22 @@ Public Class bloqueos
     Public list_ges As String
     Dim list_cons_a As New List(Of Integer)
     Dim list_cons_a_e As New List(Of Integer)
+
+    Public Property Factoria1 As IDaoFactory
+        Get
+            Return factoria
+        End Get
+        Set(value As IDaoFactory)
+            factoria = value
+        End Set
+    End Property
     'Dim list_manual As New List(Of bloquear)
     Private Sub bloqueos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             'NHibernateSessionManager.Instancia.BeginTransaction()
-            factoria = New NHibernateDaoFactory
-            bloquearDao = factoria.GetBloquearDao
-            gestoresDao = factoria.GetGestoresDao
+            Factoria1 = New NHibernateDaoFactory
+            bloquearDao = Factoria1.GetBloquearDao
+            gestoresDao = Factoria1.GetGestoresDao
 
             Dim a_bloq As New List(Of bloquear)
             a_bloq = bloquearDao.GetByExcep(excep1, excep2, excep3, excep4, excep5, excep6)
